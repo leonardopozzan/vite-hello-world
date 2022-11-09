@@ -1,5 +1,6 @@
 <template>
-    <header>
+    <header class="jumbo">
+        <img src="/favicon.ico" class="logo">
         <h1 class="title">{{titolo}}</h1>
     </header>
 </template>
@@ -15,16 +16,20 @@
 </script>
 
 <style lang="css" scoped>
-    header{
+    .logo{
+        width: 10%;
+    }
+    .jumbo{
         height: 60vh;
-        background-color: aqua;
+        background-image: url('../../public/images/background.jpg');
+        background-size: cover;
+        background-position: center;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
     .title{
-        color: white;
-        padding: 10px;
-        background-color: red;
+        font-size: 2.5rem;
     }
 </style>
