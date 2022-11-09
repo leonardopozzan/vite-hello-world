@@ -1,16 +1,18 @@
 <template>
   <HeaderComponentVue />
+  <MainComponentVue />
 </template>
 
 <script>
 import HeaderComponentVue from './components/HeaderComponentVue.vue';
+import MainComponentVue from './components/MainComponentVue.vue';
   export default {
     data(){
       return{
-      paragrafo : 'lorem'
+      
       }
     },
-    components:{HeaderComponentVue}
+    components:{HeaderComponentVue,MainComponentVue}
   }
 </script>
 
